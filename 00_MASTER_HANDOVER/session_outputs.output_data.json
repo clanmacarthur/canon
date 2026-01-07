@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "blueprint_id": "<uuid from session_blueprints.id>",
+  "total_duration_sec": 1200,
+  "selected": {
+    "lens_slug": "<lens_definitions.lens_slug>",
+    "timing_preset_id": "<uuid>",
+    "narration_style_id": "<uuid>",
+    "persona_id": "<string or null>"
+  },
+  "phases": [
+    {
+      "phase_type": "intro|technique|integration|outro",
+      "phase_name": "<string>",
+      "start_sec": 0,
+      "end_sec": 120,
+      "steps": [
+        {
+          "step_id": "<uuid or null>",
+          "step_name": "<string>",
+          "intensity": "<string or null>",
+          "instructions": "<string>"
+        }
+      ],
+      "cues": [
+        {
+          "time_sec": 60,
+          "cue_trigger_id": "<uuid or null>",
+          "cue_type": "phase_start|interval|phase_end|transition",
+          "narration": "<string>",
+          "assets": {
+            "sound": "<string or null>",
+            "colour": "<string or null>",
+            "symbol": "<string or null>",
+            "deity_archetype": "<string or null>"
+          }
+        }
+      ]
+    }
+  ],
+  "narration_text": "<full readable script with timestamps>"
+}
